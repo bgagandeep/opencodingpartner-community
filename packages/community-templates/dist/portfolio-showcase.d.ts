@@ -1,0 +1,30 @@
+import type { AppBlueprint, AppTemplateCategory } from "./app-templates.js";
+export type ShowcaseCategory = "games" | "productivity" | "business" | "fintech" | "devtools" | "operations" | "education" | "health" | "creator" | "utilities";
+export type ShowcaseAppSpec = {
+    index: number;
+    slug: string;
+    name: string;
+    hindiTitle: string;
+    showcaseCategory: ShowcaseCategory;
+    templateCategory: AppTemplateCategory;
+    icon: string;
+    accent: string;
+    tagline: string;
+    promptUsed: string;
+    interactiveWidgetKind: "arcade-game" | "todo-kanban" | "upi-commerce" | "finance-calc" | "dev-utility" | "queue-ops" | "quiz-flashcard" | "health-timer" | "creator-studio" | "smart-converter";
+    config: {
+        primaryLabel: string;
+        secondaryLabel: string;
+        actionButtonText: string;
+        sampleItems: string[];
+        defaultNumberA: number;
+        defaultNumberB: number;
+        unitLabel: string;
+    };
+};
+export declare const PORTFOLIO_100_APPS: readonly ShowcaseAppSpec[];
+export declare function renderShowcaseAppHtml(spec: ShowcaseAppSpec): string;
+export declare function findShowcaseApp(slugOrId: string): ShowcaseAppSpec | undefined;
+export declare function matchShowcaseAppFromPrompt(promptOrName: string): ShowcaseAppSpec;
+export declare function toAppBlueprint(spec: ShowcaseAppSpec): AppBlueprint;
+export declare function renderShowcaseGalleryPage(categoryFilter?: string, searchQuery?: string): string;

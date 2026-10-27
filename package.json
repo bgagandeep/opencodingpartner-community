@@ -1,0 +1,40 @@
+{
+  "name": "opencodingpartner",
+  "version": "0.2.0",
+  "description": "OpenCodingPartner — Autonomous Multi-Agent Engineering Swarm, Live Virtual PC, and 100 Bharat & SMB Showcase App Templates.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bin": {
+    "ocp": "./dist-binary/ocp-protected.mjs",
+    "opencodingpartner": "./dist-binary/ocp-protected.mjs"
+  },
+  "scripts": {
+    "start": "node ./dist-binary/ocp-protected.mjs app --port 4317",
+    "app": "node ./dist-binary/ocp-protected.mjs app --port 4317"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "dist-binary/",
+    "packages/community-templates/",
+    "install.sh",
+    "install.ps1",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bgagandeep/opencodingpartner-community.git"
+  },
+  "keywords": [
+    "ai-agents",
+    "coding-partner",
+    "multi-agent-swarm",
+    "ollama",
+    "virtual-computer",
+    "bharat-saas",
+    "upi",
+    "gst"
+  ]
+}

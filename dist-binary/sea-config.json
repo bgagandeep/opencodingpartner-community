@@ -1,0 +1,7 @@
+{
+  "main": "./ocp-sea-main.cjs",
+  "output": "./ocp-sea-prep.blob",
+  "disableExperimentalSEAWarning": true,
+  "useSnapshot": false,
+  "useCodeCache": true
+}
