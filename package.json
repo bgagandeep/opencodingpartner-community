@@ -1,0 +1,40 @@
+{
+  "name": "zivel",
+  "version": "0.2.0",
+  "description": "Zivel — Autonomous Multi-Agent Engineering Swarm, Live Virtual PC, and 100 Bharat & SMB Showcase App Templates.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bin": {
+    "zivel": "./dist-binary/zivel-protected.mjs"
+  },
+  "scripts": {
+    "start": "node ./dist-binary/zivel-protected.mjs app --port 4317",
+    "app": "node ./dist-binary/zivel-protected.mjs app --port 4317"
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "files": [
+    "dist-binary/",
+    "packages/community-templates/",
+    "install.sh",
+    "install.ps1",
+    "LICENSE",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bgagandeep/zivel-community.git"
+  },
+  "keywords": [
+    "ai-agents",
+    "coding-partner",
+    "multi-agent-swarm",
+    "ollama",
+    "virtual-computer",
+    "bharat-saas",
+    "upi",
+    "gst"
+  ]
+}

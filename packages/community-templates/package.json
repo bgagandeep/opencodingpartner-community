@@ -1,0 +1,14 @@
+{
+  "name": "@zivel/community-templates",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "description": "Open-source 100 Showcase App templates, Bharat/SMB micro-SaaS blueprints (GST, UPI, POS, bilingual), and custom tool definitions for Zivel.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  }
+}
